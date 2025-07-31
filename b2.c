@@ -65,7 +65,7 @@ void freeTree(Tree *root)
 Tree *search(Tree *root, char *title)
 {
     if (root == NULL)
-        return;
+        return NULL;
     search(root->left, title);
     search(root->right, title);
     if (strcmp(root->data.title, title) == 0)
